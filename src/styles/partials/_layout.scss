@@ -15,11 +15,11 @@
 }
 
 .gap_40 {
-    gap: 40px;
+    gap: toRem(40);
 }
 
 .gap_30 {
-    gap: 30px;
+    gap: toRem(30);
 }
 
 .flex_60 {
@@ -307,12 +307,12 @@ aside.sidebar {
         }
 
         .interview {
-            width: toRem(1320);
+            // width: toRem(1320);
             overflow: auto;
             padding: toRem(57) toRem(23) toRem(30);
 
             &-info {
-                min-width: toRem(850);
+                min-width: 66%;
                 border: toRem(1) solid $border;
                 border-radius: toRem(5);
 

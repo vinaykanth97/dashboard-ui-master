@@ -9,7 +9,7 @@ export default function InterviewInfo() {
                 </div>
                 <div className="card-body">
                     <div className="d-flex gap_40 interview">
-                        <div className="d-flex interview-info flex_70">
+                        <div className="d-flex interview-info">
                             <div className="flex_40">
                                 <div className="candidate-info">
                                     <div className="profile">
@@ -92,7 +92,7 @@ export default function InterviewInfo() {
                                 </div>
                             </div>
                         </div>
-                        <div className="d-flex interview-info flex_70">
+                        <div className="d-flex interview-info">
                             <div className="flex_40">
                                 <div className="candidate-info">
                                     <div className="profile">
