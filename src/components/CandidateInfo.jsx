@@ -5,6 +5,7 @@ import Reject from '../assets/reject.png';
 import Eye from '../assets/eye.png';
 
 export default function CandidateInfo() {
+  console.log(Reject)
     let tableData = [
       {
         jobId: "#001",
@@ -130,11 +131,11 @@ export default function CandidateInfo() {
                               <td>{item.jobId}</td>
                               <td>{item.name}</td>
                               <td>{item.position}</td>
-                              <td>{item.level1.includes("/src/assets") ? <img src={item.level1} alt="level1" /> :  item.level1}</td>
-                              <td>{item.level2.includes("/src/assets") ? <img src={item.level2} alt="level2" /> :  item.level2}</td>
-                              <td>{item.level3.includes("/src/assets") ? <img src={item.level3} alt="level3" /> :  item.level3}</td>
-                              <td>{item.level4.includes("/src/assets") ? <img src={item.level4} alt="level4" /> :  item.level4}</td>
-                              <td>{item.marks.includes("/src/assets") ? <img src={item.marks} alt="marks" /> :  item.marks}</td>
+                              <td>{item.level1.includes("/src/assets") ||  item.level1.includes("data:") ? <img src={item.level1} alt="level1" /> :  item.level1}</td>
+                              <td>{item.level2.includes("/src/assets") || item.level2.includes("data:") ? <img src={item.level2} alt="level2" /> :  item.level2}</td>
+                              <td>{item.level3.includes("/src/assets") || item.level3.includes("data:") ? <img src={item.level3} alt="level3" /> :  item.level3}</td>
+                              <td>{item.level4.includes("/src/assets") || item.level4.includes("data:") ? <img src={item.level4} alt="level4" /> :  item.level4}</td>
+                              <td>{item.marks.includes("/src/assets") || item.marks.includes("data:")? <img src={item.marks} alt="marks" /> :  item.marks}</td>
                               <td><div className={`status ${item.status.toLowerCase()}`}>{item.status}</div></td>
                               <td>
                                 <img src={item.action} alt={item.name} />
